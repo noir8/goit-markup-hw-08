@@ -1,0 +1,17 @@
+.logo {
+	font-family: raleway, sans-serif;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 31px;
+	text-decoration: none;
+	span {
+		color: $accent-color;
+	}
+	p {
+		color: $title-text-color;
+	}
+	span:visited,
+	p:visited {
+		color: $title-text-color;
+	}
+}
