@@ -1,0 +1,71 @@
+.sec-ourwork {
+  display: none;
+}
+@media screen and (min-width: $desktop) {
+  .sec-ourwork {
+    display: block;
+    margin-top: 94px;
+  }
+}
+
+.sec-ourworklist {
+  display: flex;
+  margin-top: 50px;
+}
+.sec-ourworklist > li {
+  display: flex;
+  background-size: cover;
+
+  height: 294px;
+  width: 370px;
+  align-items: flex-end;
+}
+
+.sec-ourworklist > li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.sec-ourworklist > li > div {
+  height: 70px;
+  width: 100%;
+  padding-top: 10px;
+  background-image: linear-gradient(
+    rgba(47, 48, 58, 0.8),
+    rgba(47, 48, 58, 0.8)
+  );
+  text-align: center;
+}
+
+.sec-ourworklist > li:nth-child(1) {
+  background-image: url("../images/boxOptim1.jpg");
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url("../images/boxOptim1@2x.jpg");
+  }
+}
+
+.sec-ourworklist > li:nth-child(2) {
+  background-image: url("../images/boxOptim2.jpg");
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url("../images/boxOptim2@2x.jpg");
+  }
+}
+.sec-ourworklist > li:nth-child(3) {
+  background-image: url("../images/boxOptim3.jpg");
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url("../images/boxOptim3@2x.jpg");
+  }
+}
+
+.sec-ourworklist h3 {
+  font-weight: bold;
+  font-size: 16px;
+
+  text-transform: uppercase;
+  color: white;
+}

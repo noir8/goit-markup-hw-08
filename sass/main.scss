@@ -1,15 +1,27 @@
-@import "./utils/variables";
-@import "./base/normalize";
-@import "./utils/placeholders";
-@import "./utils/fonts";
-@import "./utils/base-styles";
-@import "./components/page-header";
-@import "./components/page-logo";
-@import "./components/site-overlay";
-@import "./components/site-features";
-@import "./components/what-we-do";
-@import "./components/our-team";
-@import "./components/_team-social-network";
-@import "./components/our-clients";
+// Пременные
+@import "./utils/vars";
+// Шрифты
+@import "./utils/font";
+//  Установки для всего документа
+@import "./utils/setting";
+// Хедер с навигацией
+@import "./components/header";
+//  Секция Героя
+@import "./components/hero";
+//  Секция "Наши сильные стороны
+@import "./components/ourside";
+//  Секция "Чем  мы занимаемся
+@import "./components/ourwork";
+// Секция "Наша команда
+@import "./components/ourteam";
+// Секция "Постоянные клиенты
+@import "./components/ourklients";
+// Кнопки на странице портфолио
+@import "./components/button_portfolio";
+// Секция "Портфолио наших работ
+@import "./components/portfolio";
+
+//  Футер
 @import "./components/footer";
+//  Модальные окна
 @import "./components/modal";

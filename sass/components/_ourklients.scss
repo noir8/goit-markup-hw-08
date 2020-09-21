@@ -1,0 +1,67 @@
+.sec-ourclients {
+  margin-top: 60px;
+  @media screen and (min-width: $desktop) {
+    margin-top: 94px;
+  }
+}
+.sec-ourclientslist {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  @media screen and (min-width: $desktop) {
+    margin-top: 50px;
+  }
+}
+
+.sec-ourclientslist > li {
+  @media screen and (max-width: 767px) {
+    width: calc((100% - 30px) / 2);
+    &:not(:nth-child(2n)) {
+      margin-right: 30px;
+    }
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    width: calc((100% - 30px * 2) / 3);
+    &:not(:nth-child(3n)) {
+      margin-right: 30px;
+    }
+    &:not(:nth-last-child(-n + 3)) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 30px * 5) / 6);
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.ourclientsicons {
+  display: flex;
+  height: 90px;
+  border-radius: 5px;
+  color: #afb1b8;
+  border: 1px solid #afb1b8;
+  transition-property: border, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
+  &:hover {
+    border: 1px solid $accent-color;
+    color: $accent-color;
+  }
+}
+
+.icon-logo1,
+.icon-logo2,
+.icon-logo3,
+.icon-logo4,
+.icon-logo5,
+.icon-logo6 {
+  margin: auto;
+  fill: currentColor;
+}

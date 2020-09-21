@@ -1,0 +1,73 @@
+header {
+  z-index: 1;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+address {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  min-width: 400px;
+  // outline: 3px solid red;
+
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 42px;
+  @media screen and (min-width: $desktop) {
+    font-size: 44px;
+    line-height: 60px;
+  }
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.sec-ourside h2,
+.sec-ourwork h2,
+.sec-ourteam h2,
+.sec-ourclients h2 {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  @media screen and (min-width: $desktop) {
+    font-size: 36px;
+    line-height: 42px;
+  }
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Стилизация всех кнопок */
+.main-button,
+.button-filter,
+.form-sendbutton,
+.button-foot {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 30px;
+  border: none;
+  outline: none;
+}
